@@ -1,0 +1,1 @@
+export default function Page(){return <div><h1 className='text-3xl font-bold mb-4'>Paramètres</h1><ul className='space-y-2'>{['Profil','Abonnement','Crédits','Exports','Intégrations futures'].map(x=><li key={x} className='glass p-3 rounded-xl'>{x}</li>)}</ul></div>}

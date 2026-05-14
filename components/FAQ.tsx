@@ -1,0 +1,2 @@
+import { Card } from './ui';
+export default function FAQ(){const q=['Faut-il savoir coder ?','Les sites sont-ils hébergés ?','Est-ce vraiment une IA ?','Résultats garantis ?','Comment fonctionnent les crédits ?','Puis-je utiliser mes photos ?'];return <section className='grid md:grid-cols-2 gap-4'>{q.map(x=><Card key={x}><h3 className='font-semibold'>{x}</h3><p className='text-sm text-white/70 mt-2'>Réponse premium fournie dans la plateforme.</p></Card>)}</section>}

@@ -1,0 +1,1 @@
+export default function Page(){return <div><h1 className='text-3xl font-bold mb-4'>E-commerce IA</h1><ul className='space-y-2'>{['Shopify','Pages produits','Offres','Upsell','Panier abandonné','Dashboard résultats'].map(x=><li key={x} className='glass p-3 rounded-xl'>{x}</li>)}</ul><p className='mt-4 text-yellow-300'>Avertissement: aucun résultat garanti.</p></div>}

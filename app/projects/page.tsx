@@ -1,0 +1,2 @@
+import { projects } from '@/lib/mockData';
+export default function Page(){return <div><h1 className='text-3xl font-bold mb-6'>Mes sites</h1><div className='space-y-3'>{projects.map(p=><div key={p.name} className='glass p-4 rounded-xl flex justify-between'><div><p>{p.name}</p><p className='text-sm text-white/70'>{p.sector} • {p.date} • {p.status}</p></div><div className='flex gap-2'><button>Voir</button><button>Télécharger</button></div></div>)}</div></div>}
