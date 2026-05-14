@@ -1,0 +1,2 @@
+'use client'; import { downloadHtml } from '@/lib/exportHtml';
+export default function ExportPanel({html,dm}:{html:string;dm:string}){return <div className='card p-3 space-y-2'><button className='btn' onClick={()=>navigator.clipboard.writeText(html)}>Copier HTML</button><button className='btn' onClick={()=>downloadHtml(html)}>Télécharger HTML</button><button className='btn' onClick={()=>navigator.clipboard.writeText(dm)}>Copier message client</button><p className='text-sm'>{dm}</p></div>}

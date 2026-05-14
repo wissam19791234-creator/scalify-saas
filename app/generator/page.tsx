@@ -1,2 +1,1 @@
-import { redirect } from 'next/navigation';
-export default function Generator(){redirect('/studio')}
+import { redirect } from 'next/navigation'; export default function Page(){redirect('/studio')}

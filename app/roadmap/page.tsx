@@ -1,0 +1,1 @@
+export default function Page(){return <main className='p-4 max-w-5xl mx-auto'><div className='card p-6'><h1 className='text-3xl font-bold'>Roadmap</h1><ul><li>OpenAI/Claude live</li><li>Stripe</li><li>Supabase auth</li></ul></div></main>}

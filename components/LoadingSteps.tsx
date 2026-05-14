@@ -1,0 +1,2 @@
+'use client'; import { steps } from '@/lib/generator';
+export default function LoadingSteps({progress}:{progress:number}){const idx=Math.floor(progress/13);return <div className='card p-4'><p>{progress}% • temps estimé {Math.max(1,Math.ceil((100-progress)/15))}s</p><div className='w-full h-2 bg-black/10 rounded mt-2'><div className='h-2 rounded bg-gradient-to-r from-orange-500 to-violet-500' style={{width:`${progress}%`}}/></div><ul className='mt-3 text-sm'>{steps.map((s,i)=><li key={s}>{i<idx?'✅':i===idx?'🔄':'⭕'} {s}</li>)}</ul></div>}

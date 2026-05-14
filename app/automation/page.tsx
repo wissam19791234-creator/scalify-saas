@@ -1,1 +1,1 @@
-export default function Page(){return <div><h1 className='text-3xl font-bold mb-4'>Automatisation IA</h1><ul className='space-y-2'>{['Devis automatique','Chatbot','Relances','CRM','WhatsApp','Emails automatiques','Scoring prospects'].map(x=><li key={x} className='glass p-3 rounded-xl'>{x}</li>)}</ul></div>}
+export default function Page(){return <main className='p-4 max-w-5xl mx-auto'><div className='card p-6'><h1 className='text-3xl font-bold'>automation</h1><p className='text-[#6b625b]'>Page premium en cours de finalisation.</p></div></main>}

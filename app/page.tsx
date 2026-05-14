@@ -1,2 +1,2 @@
-import Navbar from '@/components/landing/Navbar'; import Hero from '@/components/landing/Hero'; import HowItWorks from '@/components/landing/HowItWorks'; import Features from '@/components/landing/Features'; import Pricing from '@/components/landing/Pricing'; import FAQ from '@/components/landing/FAQ'; import Footer from '@/components/landing/Footer';
-export default function Home(){return <><Navbar/><Hero/><HowItWorks/><Features/><Pricing/><FAQ/><Footer/></>}
+import Navbar from '@/components/Navbar';
+export default function Page(){return <main className='p-4 max-w-6xl mx-auto'><Navbar/><section className='card p-8 text-center'><h1 className='text-5xl font-bold'>Crée des sites pour commerces locaux avec l’IA</h1><p className='mt-3 text-[#6b625b]'>Prompt + photos + export HTML + message client.</p><a href='/studio' className='btn inline-block mt-5'>Tester le studio</a></section></main>}

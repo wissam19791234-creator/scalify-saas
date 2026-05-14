@@ -1,2 +1,2 @@
-const items=['Brow Muse','Wemaa Services','NYA Collections','Chey Event’s','Safi Pure Beauty'];
-export default function Page(){return <div><h1 className='text-4xl font-bold mb-5'>Projets</h1><div className='grid md:grid-cols-3 gap-3'>{items.map(n=><div key={n} className='color-card'><h3 className='font-semibold'>{n}</h3><p className='text-sm text-[#6b625b]'>Statut: prêt</p><button className='mt-3 px-3 py-2 rounded-full border'>Ouvrir</button></div>)}</div></div>}
+'use client'; import { readProjects } from '@/lib/storage';
+export default function Page(){const projects=readProjects(); return <main className='p-4 max-w-6xl mx-auto'><h1 className='text-3xl font-bold mb-4'>Mes projets</h1><div className='grid md:grid-cols-3 gap-3'>{projects.map((p:any)=><div key={p.id} className='card p-3'><p className='text-sm'>{p.prompt}</p><p className='text-xs text-gray-500'>{p.date}</p></div>)}</div>{projects.length===0&&<p>Aucun projet sauvegardé.</p>}</main>}
