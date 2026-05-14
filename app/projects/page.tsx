@@ -1,2 +1,2 @@
-'use client'; import { readProjects } from '@/lib/storage';
-export default function Page(){const projects=readProjects(); return <main className='p-4 max-w-6xl mx-auto'><h1 className='text-3xl font-bold mb-4'>Mes projets</h1><div className='grid md:grid-cols-3 gap-3'>{projects.map((p:any)=><div key={p.id} className='card p-3'><p className='text-sm'>{p.prompt}</p><p className='text-xs text-gray-500'>{p.date}</p></div>)}</div>{projects.length===0&&<p>Aucun projet sauvegardé.</p>}</main>}
+import { projects } from '@/lib/mockData';
+export default function Page(){return <div><h1 className='text-3xl font-bold mb-6'>Mes sites</h1><div className='space-y-3'>{projects.map(p=><div key={p.name} className='glass p-4 rounded-xl flex justify-between'><div><p>{p.name}</p><p className='text-sm text-white/70'>{p.sector} • {p.date} • {p.status}</p></div><div className='flex gap-2'><button>Voir</button><button>Télécharger</button></div></div>)}</div></div>}

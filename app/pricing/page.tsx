@@ -1,1 +1,2 @@
-export default function Page(){return <main className='p-4 max-w-5xl mx-auto'><div className='card p-6'><h1 className='text-3xl font-bold'>pricing</h1><p className='text-[#6b625b]'>Page premium en cours de finalisation.</p></div></main>}
+import { plans } from '@/lib/plans';
+export default function Page(){return <div><h1 className='text-3xl font-bold mb-6'>Pricing</h1><div className='grid md:grid-cols-3 gap-4'>{plans.map(p=><div key={p.name} className='glass p-5 rounded-2xl'><h3>{p.name}</h3><p className='text-2xl'>{p.price}</p><p>{p.limit}</p><ul>{p.features.map(f=><li key={f}>• {f}</li>)}</ul></div>)}</div><p className='mt-8'>Formations: 97€ / 147€ / 197€ / Bundle 297€ ou 497€</p></div>}
