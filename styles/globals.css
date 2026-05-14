@@ -1,0 +1,11 @@
+@import "tailwindcss";
+:root{--bg:#07080f;--bg-2:#0d1017;--bg-3:#131820;--border:rgba(255,255,255,.06);--border-2:rgba(255,255,255,.11);--cyan:#00d4ff;--cyan-dim:#0099bb;--violet:#7c3aed;--violet-2:#a855f7;--green:#00e5a0;--text:#eef2ff;--muted:#8892a4;--muted-2:#4a5568}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-dm)}
+h1,h2,h3,h4{font-family:var(--font-syne);font-weight:800;letter-spacing:-1.5px}
+.label{letter-spacing:3px;font-size:11px;text-transform:uppercase}
+.bg-grid{background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:22px 22px}
+.ambient:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 18% 20%,rgba(0,212,255,.15),transparent 40%),radial-gradient(circle at 80% 10%,rgba(124,58,237,.14),transparent 40%)}
+.glass{background:rgba(19,24,32,.72);border:1px solid var(--border);backdrop-filter:blur(10px);border-radius:16px}
+.btn-primary{background:linear-gradient(90deg,var(--cyan),var(--violet));color:#05070d;box-shadow:0 0 26px rgba(0,212,255,.4)}
+.float{animation:float 4s ease-in-out infinite}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.pulse-glow:hover{box-shadow:0 0 36px rgba(0,212,255,.65)}

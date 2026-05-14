@@ -1,0 +1,1 @@
+export default function Sidebar(){return <aside className='sidebar'><h1 className='text-2xl font-bold'>SitePilot AI</h1><nav className='mt-4 space-y-2 text-sm'><a href='/'>Home</a><br/><a href='/studio'>Studio IA</a><br/><a href='/projects'>Projets</a><br/><a href='/pricing'>Pricing</a><br/><a href='/dashboard'>Dashboard</a></nav></aside>}
