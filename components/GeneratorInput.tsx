@@ -1,0 +1,1 @@
+export default function GeneratorInput({value,onChange}:{value:string;onChange:(v:string)=>void}){return <textarea value={value} onChange={(e)=>onChange(e.target.value)} className='w-full p-4 rounded-2xl bg-white/5 border border-white/15 min-h-32' placeholder='Crée un site premium pour un institut de beauté à Marseille...'/>}
