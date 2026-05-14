@@ -1,0 +1,1 @@
+export default function HistoryGrid(){return <div className='grid grid-cols-2 md:grid-cols-4 gap-3 mt-4'>{['Brow Muse','Resto Bruno','Spa O2','Atelier Rose'].map(n=><div key={n} className='glass p-3'>{n}</div>)}</div>}

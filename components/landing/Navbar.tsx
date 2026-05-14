@@ -1,0 +1,3 @@
+'use client';
+import { motion } from 'framer-motion';
+export default function Navbar(){return <header className='sticky top-0 z-30 backdrop-blur border-b border-white/10 bg-black/30'><div className='max-w-6xl mx-auto p-4 flex justify-between items-center'><p className='font-black text-xl bg-gradient-to-r from-cyan-300 to-violet-400 bg-clip-text text-transparent'>SitePilot AI</p><nav className='hidden md:flex gap-6 text-sm text-[#8892a4]'><a href='#features'>Fonctionnalités</a><a href='#pricing'>Pricing</a><a href='#faq'>FAQ</a></nav><motion.button whileHover={{scale:1.03}} className='btn-primary rounded-full px-4 py-2 font-extrabold'>Commencer gratuitement →</motion.button></div></header>}

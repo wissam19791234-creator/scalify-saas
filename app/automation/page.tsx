@@ -1,0 +1,1 @@
+export default function Page(){return <div><h1 className='text-3xl font-bold mb-4'>Automatisation IA</h1><ul className='space-y-2'>{['Devis automatique','Chatbot','Relances','CRM','WhatsApp','Emails automatiques','Scoring prospects'].map(x=><li key={x} className='glass p-3 rounded-xl'>{x}</li>)}</ul></div>}
